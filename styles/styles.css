@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+  font-size: 62.5%;
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+
+}
+
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-size: 1.6rem;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--color-gray-950);
+  background-color: var(--color-yellow);
+}
+
+main#blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 50%;
+  ;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(32.7rem, 26.7%, 38.4rem);
+  /*width: 26.7%;
+  max-width: 38.4rem;
+  min-width: 32.7rem;*/
+  padding: 2.4rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-950);
+  border-radius: 2rem;
+  box-shadow: 8px 8px 0px 0px var(--color-gray-950);
+}
+
+picture {
+  overflow-x: hidden;
+}
+
+.graphic-header {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
+
+}
+
+div#content {
+  margin: 2rem 0;
+}
+
+.category {
+  padding: .4rem 1.2rem;
+  background-color: var(--color-yellow);
+  border: none;
+  border-radius: .4rem;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.pub-date {
+  margin-top: 1.1rem;
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.blog-title {
+  margin-top: 1.6rem;
+  font-size: clamp(2rem, 5vw, 2.4rem);
+}
+
+.blog-title:hover {
+  cursor: pointer;
+}
+
+
+.description {
+  margin-top: 1.6rem;
+  line-height: 150%;
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  font-weight: 500;
+}
+
+#avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1.2rem;
+  margin-top: .5rem;
+}
+
+#avatar-container:hover {
+  cursor: pointer;
+}
+
+.user-image {
+  height: 3.2rem;
+}
+
+.user-name {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 800;
+}
+
+#attribution {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 28rem);
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+}
+
+#attribution a {
+  color: hsl(228, 45%, 44%);
+}
